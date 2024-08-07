@@ -1,10 +1,6 @@
 import React from "react";
 import styles from "@/components/legal-services/legalservices.module.css"
 const VisonCard = ({visionContentstyle , title , desc}) => {  
-  console.log(visionContentstyle);
-  console.log(10);
-  
-  
   return (
     <div className={styles[visionContentstyle]}>
       <h3>{title}</h3>

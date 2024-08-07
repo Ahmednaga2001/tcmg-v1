@@ -41,7 +41,7 @@ const Guidelines = () => {
             title={data[0].title}
             desc={data[0].desc}
           />
-          <CardImg imgStyle="imgleft" path={data[0].path} />
+          <CardImg imgStyle="imgleft" path={data[0].path}  title={data[1].title}/>
         </div>
         <div className={styles.practiceCard}>
           <CardImg imgStyle="imgright" path={data[1].path} />
@@ -57,10 +57,10 @@ const Guidelines = () => {
             title={data[2].title}
             desc={data[2].desc}
           />
-          <CardImg imgStyle="imgleft" path={data[2].path} />
+          <CardImg imgStyle="imgleft" path={data[2].path} title={data[2].title} />
         </div>
         <div className={styles.practiceCard}>
-          <CardImg imgStyle="imgright" path={data[3].path} />
+          <CardImg imgStyle="imgright" path={data[3].path} title={data[3].title} />
           <CardContent
             visionContentstyle="contentleft"
             title={data[3].title}
@@ -73,7 +73,7 @@ const Guidelines = () => {
     مشاهدة كامل فريق العمل
     <Image
       src="assets/icons/legalservices/arrow-left.svg"
-      alt="Arrow Left Small"
+      alt="Arrow Left Small for legal services page"
       width={30}
       height={30}
     />
