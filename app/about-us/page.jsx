@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import Link from "next/link";
 import AboutSlider from "@/components/about/AboutSlider";
-import Vision from "@/components/about/Vision";
 import Team from "@/components/about/Team";
 import Owner from "@/components/about/Owner";
 import BuisnessHistory from "@/components/about/BuisnessHistory";
+import Vision from "@/components/about/Vision";
 
 function AboutUs() {
   return (
@@ -45,7 +45,7 @@ function AboutUs() {
 
       <BuisnessHistory />
 
-      <Vision />
+      <Vision/>
 
       <section className={styles.teamSection}>
         <h2 className={styles.headingTeam}>

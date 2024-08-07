@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "@/components/about/About.module.css";
-import VisionImg from "@/components/about/VisionImg";
-import VisonCard from "@/components/about/VisonCard";
+import VisionImg from "./VisionImg";
+import VisionCard from '@/components/about/VisionCard'
 const visionData = [
   {
     title: "التوسع علي النطاق المحلي",
@@ -52,7 +51,7 @@ const Vision = () => {
         <h2 className={styles.centerHeading}>رؤيتنا للمستقبل</h2>
         <div className={styles.parentvision}>
           <div className={styles.vision}>
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontent"
               title={visionData[0].title}
               desc={visionData[0].desc}
@@ -61,14 +60,14 @@ const Vision = () => {
           </div>
           <div className={styles.vision}>
             <VisionImg imgStyle="imgright" path={visionData[1].path} />
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontentleft"
               title={visionData[1].title}
               desc={visionData[1].desc}
             />
           </div>
           <div className={styles.vision}>
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontent"
               title={visionData[2].title}
               desc={visionData[2].desc}
@@ -83,7 +82,7 @@ const Vision = () => {
         </h2>
         <div className={styles.parentvision}>
           <div className={styles.vision}>
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontent"
               title={visionData[3].title}
               desc={visionData[3].desc}
@@ -92,14 +91,14 @@ const Vision = () => {
           </div>
           <div className={styles.vision}>
             <VisionImg imgStyle="imgright" path={visionData[4].path} />
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontentleft"
               title={visionData[4].title}
               desc={visionData[4].desc}
             />
           </div>
           <div className={styles.vision}>
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontent"
               title={visionData[5].title}
               desc={visionData[5].desc}
@@ -107,7 +106,7 @@ const Vision = () => {
             <VisionImg imgStyle="imgleft" path={visionData[5].path} />
           </div>
           <div className={styles.vision}>
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontent"
               title={visionData[6].title}
               desc={visionData[6].desc}
@@ -116,7 +115,7 @@ const Vision = () => {
           </div>
           <div className={styles.vision}>
             <VisionImg imgStyle="imgright" path={visionData[7].path} />
-            <VisonCard
+            <VisionCard
               visionContentstyle="visioncontentleft"
               title={visionData[7].title}
               desc={visionData[7].desc}

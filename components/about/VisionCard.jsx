@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/components/about/About.module.css"
-const Card = ({visionContentstyle , title , desc}) => {  
+const VisionCard = ({visionContentstyle , title , desc}) => {  
   return (
     <div className={styles[visionContentstyle]}>
       <h3>{title}</h3>
@@ -9,4 +9,4 @@ const Card = ({visionContentstyle , title , desc}) => {
   );
 };
 
-export default VisonCard;
+export default VisionCard;
