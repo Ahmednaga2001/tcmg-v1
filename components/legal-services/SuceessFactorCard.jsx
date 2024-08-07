@@ -9,6 +9,7 @@ const SuceessFactorCard = ({title , desc , path}) => {
           src={path}
           width={30}
           height={30}
+          alt={title}
         />
         <h3>{title}</h3>
         </div>
@@ -19,6 +20,7 @@ const SuceessFactorCard = ({title , desc , path}) => {
           src={path}
           width={60}
           height={60}
+          alt={title}
         />
       </div>
       <div className={styles.content}>
