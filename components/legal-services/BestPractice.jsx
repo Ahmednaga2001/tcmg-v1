@@ -41,10 +41,14 @@ const Guidelines = () => {
             title={data[0].title}
             desc={data[0].desc}
           />
-          <CardImg imgStyle="imgleft" path={data[0].path}  title={data[1].title}/>
+          <CardImg
+            imgStyle="imgleft"
+            path={data[0].path}
+            title={data[0].title}
+          />
         </div>
         <div className={styles.practiceCard}>
-          <CardImg imgStyle="imgright" path={data[1].path} />
+          <CardImg imgStyle="imgright" path={data[1].path} title={data[1].title} />
           <CardContent
             visionContentstyle="contentleft"
             title={data[1].title}
@@ -57,10 +61,18 @@ const Guidelines = () => {
             title={data[2].title}
             desc={data[2].desc}
           />
-          <CardImg imgStyle="imgleft" path={data[2].path} title={data[2].title} />
+          <CardImg
+            imgStyle="imgleft"
+            path={data[2].path}
+            title={data[2].title}
+          />
         </div>
         <div className={styles.practiceCard}>
-          <CardImg imgStyle="imgright" path={data[3].path} title={data[3].title} />
+          <CardImg
+            imgStyle="imgright"
+            path={data[3].path}
+            title={data[3].title}
+          />
           <CardContent
             visionContentstyle="contentleft"
             title={data[3].title}
@@ -69,65 +81,26 @@ const Guidelines = () => {
         </div>
       </div>
       <div className={styles.linkContainer}>
-  <Link href="#" className={styles.linkItem}>
-    مشاهدة كامل فريق العمل
-    <Image
-      src="assets/icons/legalservices/arrow-left.svg"
-      alt="Arrow Left Small for legal services page"
-      width={30}
-      height={30}
-    />
-  </Link>
-  <Link href="#" className={styles.linkItem}>
-  احجز موعدك مع أحد خبرائنا   
-   <Image
-      src="/assets/icons/legalservices/calender.png"
-      alt="Calender"
-      width={30}
-      height={30}
-    />
-  </Link>
-</div>
-
+        <Link href="#" className={styles.linkItem}>
+          مشاهدة كامل فريق العمل
+          <Image
+            src="assets/icons/legalservices/arrow-left.svg"
+            alt="Navigate to full team page"
+            width={30}
+            height={30}
+          />
+        </Link>
+        <Link href="#" className={styles.linkItem}>
+          احجز موعدك مع أحد خبرائنا
+          <Image
+            src="/assets/icons/legalservices/calender.png"
+            alt="Calendar icon"
+            width={30}
+            height={30}
+          />
+        </Link>
+      </div>
     </section>
-
-    //     <section className={styles.bestPractices}>
-    //   <h2>الممارسات</h2>
-    //   <div className={styles.contentContainer}>
-    //     <div className={styles.practiceCard}>
-    //       <CardContent
-    //         contentStyle={styles.content}
-    //         title={data[0].title}
-    //         desc={data[0].desc}
-    //       />
-    //       <CardImg imgStyle={styles.imageLeft} path={data[0].path} />
-    //     </div>
-    //     <div className={styles.practiceCard}>
-    //       <CardImg imgStyle={styles.imageRight} path={data[1].path} />
-    //       <CardContent
-    //         contentStyle={styles.contentLeft}
-    //         title={data[1].title}
-    //         desc={data[1].desc}
-    //       />
-    //     </div>
-    //     <div className={styles.practiceCard}>
-    //       <CardContent
-    //         contentStyle={styles.content}
-    //         title={data[2].title}
-    //         desc={data[2].desc}
-    //       />
-    //       <CardImg imgStyle={styles.imageLeft} path={data[2].path} />
-    //     </div>
-    //     <div className={styles.practiceCard}>
-    //       <CardImg imgStyle={styles.imageRight} path={data[3].path} />
-    //       <CardContent
-    //         contentStyle={styles.contentLeft}
-    //         title={data[3].title}
-    //         desc={data[3].desc}
-    //       />
-    //     </div>
-    //   </div>
-    // </section>
   );
 };
 
