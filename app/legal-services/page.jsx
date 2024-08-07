@@ -1,6 +1,7 @@
 import styles from "@/components/legal-services/legalservices.module.css";
 import OurOfferings from "@/components/legal-services/OurOfferings";
 import SuccessFactors from "@/components/legal-services/SuccessFactors";
+import Guidelines from "../../components/legal-services/BestPractice";
 function LegalServices() {
   return (
     <div className={styles.page}>
@@ -16,6 +17,7 @@ function LegalServices() {
       </section>
       <OurOfferings/>
       <SuccessFactors/>
+      <Guidelines/>
     </div>
   );
 }
